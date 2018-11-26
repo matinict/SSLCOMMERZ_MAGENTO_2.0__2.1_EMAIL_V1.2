@@ -172,7 +172,7 @@ class Sslcommerz extends AbstractMethod
      */
     protected function isCarrierAllowed($shippingMethod)
     {
-        return strpos($this->getConfigData('allowed_carrier'), $shippingMethod) !== false;
+        return strpos($this->getConfigData('allowed_carrier'), $shippingMethod) !== true;
     }
 
 
